@@ -1,0 +1,43 @@
+<div>
+    <div>
+        <h2 class="bold">Movies</h2>
+    </div>
+    <div>
+        <div>
+            <div class="d-block float-left mx-2 my-2" style="width: 300px;" *ngFor="let movie of moviesList">
+                <div class="card">
+                    <img class="card-img-top" src="../../assets/movies.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{movie.title}}</h5>
+                        <div>
+                            <b style="font-weight: 500;">Year Of Release : </b> <span>{{movie.yearOfRelease}}</span>
+                        </div>
+                        <div>
+                            <b style="font-weight: 500;">Genre : </b> <span>{{movie.genre}}</span>
+                        </div>
+                        <p class="card-text">{{movie.storyline}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5 class="card-title"> Cast</h5>
+                        <div class="d-flex">
+                            <div class="d-block mx-2" style="width: fit-content;">
+                                <img class="card-img-top" src="../../assets/movies.jpg" alt="Card image cap" 
+                                  style="width: 64px;height: 54px;">
+                                <div>
+                                    <p class="card-text"> vijay</p>
+                                </div>
+                            </div>
+                            <div class="d-block mx-2" style="width: fit-content;">
+                                <img class="card-img-top" src="../../assets/movies.jpg" alt="Card image cap" 
+                                  style="width: 64px;height: 54px;">
+                                <div>
+                                    <p class="card-text"> vijay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
